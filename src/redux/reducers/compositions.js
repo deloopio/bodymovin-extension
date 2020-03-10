@@ -9,16 +9,16 @@ let initialState = {
   items:{},
   current: 0,
   show_only_selected: false,
-  shouldUseCompNameAsDefault: false,
+  shouldUseCompNameAsDefault: true,
 }
 let extensionReplacer = /\.\w*$/g
 
 let defaultComposition = {
     id: 0,
     name: '',
-    destination: '',
+    destination: '~/bodymovin_lottie_files_out',
     absoluteURI: '',
-    selected: false,
+    selected: true,
     renderStatus: 0,
     settings: {
         segmented: false,
